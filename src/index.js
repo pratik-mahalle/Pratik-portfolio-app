@@ -28,4 +28,3 @@ render(
     </>,
     document.getElementById("app")
 );
-
