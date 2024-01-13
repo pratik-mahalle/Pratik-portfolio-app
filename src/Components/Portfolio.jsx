@@ -31,28 +31,22 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
+    title: "Build an AI text summerizer app🎉",
     description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+      "Introducing my AI Text Summarizer App - a powerful tool designed to distill lengthy documents, articles, or paragraphs into concise and informative summaries. Leveraging advanced natural language processing algorithms, this app employs cutting-edge AI technology to identify key insights, delivering time-efficient and digestible summaries. Whether you're a student, professional, or avid reader, streamline your information consumption with precision and speed using this innovative AI Text Summarizer App.",
+    url: "https://github.com/pratik-mahalle/ai-summerizer-app",
   },
   {
-    title: "Web Development for Beginners",
+    title: "Microsoft Student Ambassador",
     description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+      "Student Ambassadors are a global group of campus leaders who are eager to help fellow students, create robust tech communities and develop technical and career skills for the future",
+    url: "https://mvp.microsoft.com/studentambassadors/certificate/3c2fea10-f3a9-472a-979e-71b88b705001",
   },
   {
-    title: "My Resume Site",
+    title: "Postman Student Expert",
     description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
-  },
-  {
-    title: "GitHub Codespaces and github.dev",
-    description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+      "Adept in API testing, collaboration, and automation through hands-on experience with the industry-leading Postman platform. Proficient in designing, testing, and documenting APIs, with a recognized credential showcasing expertise in modern software development.      Ambassadors are a global group of campus leaders who are eager to help fellow students, create robust tech communities and develop technical and career skills for the future",
+    url: "",
   },
 ];
 
@@ -64,7 +58,7 @@ const Portfolio = () => {
         <div style={{ maxWidth: "40%", alignSelf: "center" }}>
           <img
             src={image}
-            style={{ height: "90%", width: "100%", objectFit: "cover" }}
+            style={{ height: "90%", width: "100%", objectFit: "cover", animation: "1s ease-out 0s 1 slideIn" }}
             alt={imageAltText}
           />
         </div>
