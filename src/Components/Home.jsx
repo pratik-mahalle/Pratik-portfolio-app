@@ -49,3 +49,7 @@ Home.propTypes = {
 };
 
 export default Home;
+  title: PropTypes.string.isRequired,
+};
+
+export default Home;
