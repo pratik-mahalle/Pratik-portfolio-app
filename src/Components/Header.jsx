@@ -19,6 +19,7 @@ const Header = () => {
         top: 0,
         width: "100%",
         zIndex: 10,
+        backdropFilter: "blur(10px)"  /* Note: backdrop-filter has minimal browser support */,
       }}
     >
       <a href="#home">Home</a>
@@ -30,3 +31,4 @@ const Header = () => {
 };
 
 export default Header;
+

@@ -13,7 +13,29 @@ body {
   padding: 0;
   width: 100%;
 }
+html {
+  font-size: 16px;
+}
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --text-color-light: #000;
+  --bg-color-light: #fff;
+  --text-color-dark: #fff;
+  --bg-color-dark: #000;
+}
 
+body {
+  color: var(--text-color-light);
+  background-color: var(--bg-color-light);
+  transition: color 0.5s, background-color 0.5s;
+}
+
+body.dark-mode {
+  color: var(--text-color-dark);
+  background-color: var(--bg-color-dark);
+}
 div#main {
   display: flex;
   flex-direction: column;
@@ -122,4 +144,77 @@ a:hover {
 img.socialIcon {
   height: 30px;
   width: 30px;
+}
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.container .box {
+  animation: slideIn 0.5s ease-in-out;
+}
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.container .box {
+  animation: slideIn 0.5s ease-in-out;
+}
+
+.dark-mode-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #4e567e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  animation: rotate 2s linear infinite;
+}
+
+.dark-mode-button:hover {
+  background-color: #3b4257;
+}
+
+.dark-mode-button::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  transform: scale(0.8);
+}
+
+.dark-mode-button.dark-mode-on::before {
+  transform: scale(1);
+}
+
+.dark-mode-button.dark-mode-on:hover {
+  background-color: #4e567e;
+}
+.dark-mode-button {
+  color: rgb(184, 29, 29);
 }
